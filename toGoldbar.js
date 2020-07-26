@@ -28,7 +28,7 @@ async function python(states, root, accepts, transition) {
     };
 
     let goldbar;
-    let pyshell = new PythonShell('lib/to_goldbar/start_with_dict.py', {mode: 'json'});
+    let pyshell = new PythonShell('lib/to_goldbar/to_regex.py', {mode: 'json'});
     pyshell.send(args);
     pyshell.on('message', function (message) {
       // received a message sent from the Python script (a simple "print" statement)
